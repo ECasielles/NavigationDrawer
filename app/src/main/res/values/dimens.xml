@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_width">96dp</dimen>
+    <dimen name="profile_height">96dp</dimen>
+    <dimen name="navview_width">280dp</dimen>
+    <dimen name="header_navview_height">144dp</dimen>
+    <dimen name="toolbar_elevation">8dp</dimen>
+</resources>
