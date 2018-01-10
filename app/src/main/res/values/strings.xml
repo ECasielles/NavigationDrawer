@@ -8,4 +8,6 @@
     <string name="navview_subheader">Other options</string>
     <string name="action_help">Help</string>
     <string name="action_config">Settings</string>
+    <string name="hello_blank_fragment_one">hello_blank_fragment_one</string>
+    <string name="hello_blank_fragment_two">hello_blank_fragment_two</string>
 </resources>

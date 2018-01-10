@@ -4,18 +4,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="@dimen/navview_width"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
     tools:context="com.example.usuario.navigationdrawer.MainActivity"
+    android:id="@+id/drawer_layout"
     >
+    <!--android:fitsSystemWindows="true" para que se ajuste al alto completo-->
+
     <!--Se añade el layout real de la activity-->
-    <include layout="@layout/activity_main"/>
+    <include layout="@layout/activity_layout"/>
 
     <!--Vamos a incluir la vista del menú lateral, Navigation View-->
+    <!--Hay que poner a mano layoutGravity-->
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
         app:headerLayout="@layout/header_navview"
         app:menu="@menu/menu_navview"
+        android:id="@+id/navview"
         >
     </android.support.design.widget.NavigationView>
 

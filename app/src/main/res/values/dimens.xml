@@ -2,7 +2,8 @@
 <resources>
     <dimen name="profile_width">96dp</dimen>
     <dimen name="profile_height">96dp</dimen>
-    <dimen name="navview_width">280dp</dimen>
-    <dimen name="header_navview_height">144dp</dimen>
+    <dimen name="header_navview_height">192dp</dimen>
+    <dimen name="header_navview_padding_left">16dp</dimen>
     <dimen name="toolbar_elevation">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

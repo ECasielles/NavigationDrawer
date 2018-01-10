@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--Garantiza que sólo una opción puede estar seleccionada-->
     <group
         android:checkableBehavior="single">
         <item
             android:id="@+id/action_home"
             android:title="@string/action_home"
-            android:icon="@drawable/action_home"
+            android:icon="@drawable/ic_action_home"
             />
         <item
             android:id="@+id/action_dependency"
             android:title="@string/action_dependency"
-            android:icon="@drawable/action_dependency"
+            android:icon="@drawable/ic_action_dependency"
             />
         <item
             android:id="@+id/action_sector"
             android:title="@string/action_sector"
-            android:icon="@drawable/action_sector"
+            android:icon="@drawable/ic_action_sector"
             />
     </group>
 
@@ -27,12 +28,12 @@
             <item
                 android:id="@+id/action_help"
                 android:title="@string/action_help"
-                android:icon="@drawable/action_help"
+                android:icon="@drawable/ic_action_help"
                 />
             <item
-                android:id="@+id/action_config"
+                android:id="@+id/action_settings"
                 android:title="@string/action_config"
-                android:icon="@drawable/action_settings"
+                android:icon="@drawable/ic_action_settings"
                 />
         </menu>
     </item>
