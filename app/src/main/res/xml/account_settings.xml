@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--Por defecto el color de PreferenceCategory es ColorAccent-->
+    <PreferenceCategory
+        android:title="@string/pref_category_general"
+        >
+        <!--Las preferencias se guardan como Map<K,V>-->
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="showimage"
+            android:summary="@string/pref_description_showimage"
+            android:summaryOff="@string/pref_description_showimage_off"
+            android:summaryOn="@string/pref_description_showimage_on"
+            android:title="@string/pref_title_showimage"
+            />
+        <!--ListPreference para poder seleccionar sólo un elemento-->
+        <!--Tiene dos arrays, entries para ver lo que se muestra y
+        entryValues con la posición del primero para establecer el valor-->
+        <ListPreference
+            android:key="numcolumn"
+            android:summary="@string/pref_summary_numcolumn"
+            android:title="@string/pref_title_numcolumn"
+            android:entries="@array/pref_entries_numcolumn"
+            android:entryValues="@array/pref_entryvalues_numcolumn"
+            android:defaultValue="1"
+            />
+    </PreferenceCategory>
+
+    <!--Aquí se muestra una línea divisoria porque son distintas preferencias-->
+    <Preference
+        android:key="about"
+        android:title="@string/pref_title_about"
+        >
+        <intent
+            android:targetClass="com.example.usuario.inventory.AboutActivity"
+            android:targetPackage="com.example.usuario.inventory"
+            />
+    </Preference>
+
+</PreferenceScreen>
